@@ -1,0 +1,44 @@
+.Header_hero{
+display: flex;
+}
+.Header_hero-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+.Header_hero-content h1{
+    font-size: 3.5rem;
+    
+}
+.Header_hero-content-atext{
+    display: flex;
+    line-height: 3rem;
+}
+h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+h3{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+p{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.Header_hero-content button{
+   min-height: 50px;
+   font-size: 1rem;
+   background: var(--gradient-text);
+   color: var(--color-bg);
+   font-weight: bold;
+   padding: 10px 20px;
+   border-radius: 15px;
+   border: 0;
+   outline: none;
+   margin-top: 1.5rem;
+}

@@ -1,0 +1,83 @@
+.Header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 6rem;
+
+}
+.Header__navbar-links{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.Header__navbar_logo{
+  margin-right: 2rem;
+}
+
+
+.Header__navbar_logo a{
+font-size: 2rem;
+font-weight: 600;
+}
+
+.Header__navbar-links_container{
+  display: flex;
+  flex-direction: row;
+
+
+
+
+
+
+}
+
+.Header__navbar-links_container p,
+.Header__navbar-menu_container p{
+  font-weight: 600;
+font-size:18px;
+line-height: 25px;
+margin: 0 1rem;
+cursor: pointer;
+
+}
+
+.header__navbar-menu{
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.Header__navbar-menu_container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: red;
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+
+@media screen and (max-width: 950px){
+  .Header__navbar-links_container{
+    display: none;
+  }
+  .header__navbar-menu{
+    display: flex;
+  }
+}
+@media screen and (max-width:550px){
+  .Header__navbar{
+    padding: 2rem;
+  }
+}
