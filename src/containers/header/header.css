@@ -17,15 +17,16 @@ display: flex;
     display: flex;
     line-height: 3rem;
 }
-h2{
+.Header_hero-content h2{
     font-size: 3.5rem;
     font-weight: bold;
+
 }
-h3{
+.Header_hero-content h3{
     font-weight: 500;
     font-size: 1.5rem;
 }
-p{
+.Header_hero-content p{
     font-weight: 500;
     font-size: 1rem;
     line-height: 2rem;
@@ -42,3 +43,98 @@ p{
    outline: none;
    margin-top: 1.5rem;
 }
+.Header_image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Header_image img {
+    width: 100%;
+
+}
+
+
+@media screen and (max-width:1310px){
+.Header_image{
+    flex: 0.9;
+}   
+.Header_hero-content h1{
+        font-size: 2rem;
+        line-height: 45px;
+    }
+
+.Header_hero-content h2 {
+        font-size: 2rem;
+        line-height: 45px;
+}
+
+.Header_hero-content-atext h2{
+    font-size: 2rem;
+    line-height: 45px;
+}
+.Header_hero-content h3{
+        font-size: 1.2rem;
+        line-height: 33px;
+    }
+.Header_hero-content p{
+        font-size: 0.9rem;
+
+    }
+}
+@media screen and (max-width:850px){
+    .Header_image{
+        flex: 1;
+    }   
+    .Header_hero-content h1{
+            font-size: 1.2rem;
+            line-height: 25px;
+        }
+    
+    .Header_hero-content h2 {
+            font-size: 1.2rem;
+            line-height: 25px;
+    }
+
+    
+    .Header_hero-content-atext h2{
+        font-size: 1.2rem;
+        line-height: 25px;
+
+    }
+    .Header_hero-content h3{
+            font-size: 0.8rem;
+            line-height: 20px;
+
+        }
+    .Header_hero-content p{
+            font-size: 0.7rem;
+            line-height: 20px;
+    
+        }
+}
+
+
+
+@media screen and (max-width:650px){
+    .Header_hero{
+        flex-direction: column;
+    }
+
+    .Header_hero-content h1,h2{
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+    .Header_hero-content h3{
+        font-size: 1.2rem;
+        line-height: 33px;
+    }
+    .Header_hero-content p{
+        font-size: 0.9rem;
+
+    }
+    
+    .Header_hero-content{
+        margin: 0 0 3rem;
+    }
+    }
