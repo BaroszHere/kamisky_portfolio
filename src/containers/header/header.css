@@ -42,3 +42,40 @@ p{
    outline: none;
    margin-top: 1.5rem;
 }
+.Header_image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Header_image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1050px){
+.Header_hero{
+    flex-direction: column;
+}
+.Header_hero-content{
+    margin: 0 0 3rem;
+}
+}
+@media screen and (max-width:650px){
+    .Header_hero-content h1,h2{
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+    .Header_hero-content h3{
+        font-size: 1.2rem;
+        line-height: 33px;
+    }
+    .Header_hero-content p{
+        font-size: 0.9rem;
+
+    }
+    
+    .Header_hero-content{
+        margin: 0 0 3rem;
+    }
+    }

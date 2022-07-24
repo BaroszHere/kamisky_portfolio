@@ -1,0 +1,19 @@
+.whatido{
+    display: flex;
+    flex-direction: column;
+
+}
+.whatido__heading{
+    text-align: right;
+}
+.whatido__container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 0 8rem
+}
+h2{
+    line-height: 40px;
+}
