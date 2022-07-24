@@ -5,15 +5,44 @@
 }
 .whatido__heading{
     text-align: right;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
+.whatido__container-blob{
+    max-width: 450px;
+
+    
+}
+.whatido__container-blob_img{
+    width: 100%;  
+}
+.whatido__container-blob_img img{
+    width: 100%; 
+}
+
+
 .whatido__container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 2rem;
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 8rem
 }
-h2{
-    line-height: 40px;
+@media screen and (max-width:1310px){
+.whatido__container{
+padding: 0;
+}
+}
+@media screen and (max-width:650px){
+.whatido__container{
+grid-template-columns: 1fr;
+    
+}
+.whatido__container-blob{
+order: 1;    
+}
+.whatido__heading{
+    margin-bottom: 30px;
+}
 }

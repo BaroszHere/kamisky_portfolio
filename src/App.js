@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Article, Navbar, Feature } from "./components";
+import { Article, Navbar, Feature, Mockup } from "./components";
 import { Contactme, Footer, Header, Whatidid, Whatido, Whatiuse } from "./containers";
 function App() {
   return (

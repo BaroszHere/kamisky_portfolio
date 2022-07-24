@@ -1,11 +1,15 @@
 .whatido__container-article{
 
-    max-width: 500px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
 
-}
 
+}
+.whatido__container-article_content{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .whatido__container-article_title{
@@ -37,9 +41,41 @@ button.button {
     box-shadow: 2px 1000px 1px #040c18 inset;
     cursor: pointer;
     font-weight: 600;
+    align-self: start;
+
+    
   }
   
   button.button:hover {
     box-shadow: none;
     color: #040c18;
   }
+  .whatido__container-article_img img{
+max-width: 100px;
+max-height: 100px;
+  }
+
+
+
+  @media screen and (max-width:1050px){
+    .whatido__container-article_content h3{
+        font-size: 1.6rem;
+        line-height: 45px;
+        }
+        .whatido__container-article_content p{
+            font-size: 0.8rem;
+        }
+        button.button{
+            font-size: 0.8rem;
+        }
+        .whatido__container-article_img img{
+            max-width: 80px;
+            max-height: 80px;
+              }
+
+}
+@media screen and (max-width:650px){
+    .whatido__container-article{
+        margin-bottom: 20px;
+    } 
+}
