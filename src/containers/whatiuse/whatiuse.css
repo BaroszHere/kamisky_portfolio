@@ -7,4 +7,57 @@
     text-align: right;
     font-size: 30px;
     margin-bottom: 10px;
+    padding-top: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+
+    }
+    100%{
+        transform: translateX(calc(-280px * 12));
+    }
+}
+
+.slider{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.slider .slide-track{
+    animation:  scroll 50s linear infinite;
+    display: flex;
+    width: calc(280px * 24);
+
+}
+
+@keyframes scroll__two{
+    0%{
+        transform: translateX(calc(-280px * 12));
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+.slider__two{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5rem;
+    width: 100%;
+}
+.slider__two .slide-track__two{
+    animation:  scroll__two 50s linear infinite;
+    display: flex;
+    width: calc(280px * 24);
+
 }
