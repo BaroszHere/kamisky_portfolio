@@ -32,7 +32,7 @@ form p{
     -webkit-text-fill-color:transparent;
 }
 form input{
-    color: #121212;
+    color: #e4e4e4;
     padding: 10px;
     position:relative;
     background: #26262b;
@@ -42,7 +42,7 @@ form input{
     
 }
 form textarea{
-    color: #121212;
+    color: #e4e4e4;
     padding: 10px;
     position:relative;
     background: #26262b;
@@ -58,7 +58,7 @@ form button{
         color: var(--color-bg);
         font-weight: bold;
         padding: 10px 20px;
-        border-radius: 15px;
+        border-radius: 10px;
         border: 0;
         outline: none;
         margin-top: 1.5rem;
