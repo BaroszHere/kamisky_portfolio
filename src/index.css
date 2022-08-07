@@ -4,5 +4,6 @@
   --font-family: "Poppins", sans-serif;
 
   --color-bg: #040c18;
-  --gradient-text: linear-gradient(133deg,#924fc6 15%,#04f6eb 100%);
+  --gradient-header: linear-gradient(133deg,#924fc6 25%,#04f6eb 100%);
+  --gradient-text: linear-gradient(100deg,#924fc6 85%,#04f6eb 100%);
 }

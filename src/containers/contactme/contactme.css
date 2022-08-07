@@ -1,3 +1,4 @@
+
 .contactme{
     display: flex;
     flex-direction: column;
@@ -7,4 +8,84 @@
     text-align: right;
     font-size: 30px;
     margin-bottom: 10px;
+}
+.contactme__content{
+    display: flex;
+    flex-direction: row;
+    padding: 6rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+}
+form p{
+    margin: 20px 0 5px 10px;
+    font-size: 21px;
+    font-weight: 600;
+
+    background: -webkit-linear-gradient(150deg,#04f6eb 80%,#924fc6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+form input{
+    color: #121212;
+    padding: 10px;
+    position:relative;
+    background: #26262b;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    
+}
+form textarea{
+    color: #121212;
+    padding: 10px;
+    position:relative;
+    background: #26262b;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    box-sizing: border-box;
+}
+form button{
+        min-height: 50px;
+        font-size: 1rem;
+        background: var(--gradient-header);
+        color: var(--color-bg);
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 15px;
+        border: 0;
+        outline: none;
+        margin-top: 1.5rem;
+        max-width: 150px;
+        outline: none;
+        cursor: pointer;
+
+}
+
+.contactme__image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contactme__image img {
+    width: 100%;
+
+}
+
+
+@media screen and (max-width:650px){
+    .contactme__content{
+        flex-direction: column;
+        padding: 0;
+    }
+
 }

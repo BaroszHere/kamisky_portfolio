@@ -9,6 +9,13 @@ display: flex;
     flex-direction: column;
     margin-right: 5rem;
 }
+#change{
+    background: var(--gradient-header);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
 .Header_hero-content h1{
     font-size: 3.5rem;
     
@@ -34,7 +41,7 @@ display: flex;
 .Header_hero-content button{
    min-height: 50px;
    font-size: 1rem;
-   background: var(--gradient-text);
+   background: var(--gradient-header);
    color: var(--color-bg);
    font-weight: bold;
    padding: 10px 20px;

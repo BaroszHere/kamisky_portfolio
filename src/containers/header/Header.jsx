@@ -9,7 +9,7 @@ const Header = () => {
           <h1>Bartosz Kamiński.</h1>
         <div className="Header_hero-content-atext">
           <h2>I&nbsp;</h2>
-          <h2 className="gradient__text">Build&nbsp;</h2>
+          <h2 id="change">Build&nbsp;</h2>
           <h2>things for</h2>
         </div>
            <h2>web business.</h2>
