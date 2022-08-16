@@ -1,13 +1,16 @@
 .Header_hero{
 display: flex;
+
 }
 .Header_hero-content{
-    flex: 1;
+    flex: 0.7;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     margin-right: 5rem;
+    padding-top: 4rem;
+
 }
 #change{
     background: var(--gradient-header);
@@ -50,21 +53,19 @@ display: flex;
    outline: none;
    margin-top: 1.5rem;
 }
-.Header_image{
-    flex: 1;
-    display: flex;
+.Header_Canvas{
+flex: 1;
+
     justify-content: center;
     align-items: center;
 }
-.Header_image img {
-    width: 100%;
 
-}
+
 
 
 @media screen and (max-width:1310px){
-.Header_image{
-    flex: 0.9;
+.Header_Canvas{
+    flex: 1;
 }   
 .Header_hero-content h1{
         font-size: 2rem;
@@ -128,6 +129,13 @@ display: flex;
         flex-direction: column;
     }
 
+    .Header_Canvas{
+        min-height: 400px;
+    } 
+    Canvas{
+        min-height: 300px;
+    }
+    
     .Header_hero-content h1,h2{
         font-size: 2.5rem;
         line-height: 45px;
@@ -142,6 +150,8 @@ display: flex;
     }
     
     .Header_hero-content{
-        margin: 0 0 3rem;
+
+        margin-top: 0;
     }
     }
+

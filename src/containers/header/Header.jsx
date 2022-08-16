@@ -1,6 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./header.css";
-import Blob1 from '../../assets/Blob1.png'
+import Blob1 from '../../assets/Blob1.png';
+import {Canvas} from "@react-three/fiber";
+import { Sphere, MeshDistortMaterial, OrbitControls } from "@react-three/drei";
+
+
 const Header = () => {
   return (
     <div className="Header_hero section__padding" id="home">
@@ -17,8 +21,24 @@ const Header = () => {
            <button type="button">Lets Talk</button>
 
       </div>
-      <div className="Header_image">
-            <img src={Blob1} alt="Blob1" />
+      <div className="Header_Canvas">
+
+            <Canvas>
+            <Suspense fallback={null}>
+            <ambientLight intensity={0.5}/>
+              <directionalLight position={[-2,5,2]} intensity={1}/>
+              <Sphere visible args={[1, 100,200]} scale={2}>
+                <MeshDistortMaterial 
+                color="#8352FD" attach="material" distort={0.7}
+                speed={1}
+                roughness={1}
+                />
+                <OrbitControls enablePan={false} enableZoom={false}/>
+              </Sphere>
+            </Suspense>
+
+              
+            </Canvas>
       </div>
     </div>
   );

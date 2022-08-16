@@ -21,7 +21,9 @@
 .Header__navbar_logo a{
 font-size: 2rem;
 font-weight: 600;
+
 }
+
 
 .Header__navbar-links_container{
   display: flex;
@@ -41,7 +43,23 @@ font-size:18px;
 line-height: 25px;
 margin: 0 1rem;
 cursor: pointer;
+position: relative;
+}
 
+.Header__navbar-links_container :after{
+  content:"";
+  position: absolute;
+  background-color: #924fc6;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+transition: 1s;
+}
+
+a:hover::after{
+  width: 100%;
+  background-color: #04f6eb;
 }
 
 .header__navbar-menu{
@@ -66,6 +84,9 @@ cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 0 5 rgba(0,0,0,0.2);
 }
+
+
+
 
 
 @media screen and (max-width: 950px){
