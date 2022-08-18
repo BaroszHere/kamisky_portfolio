@@ -9,16 +9,15 @@
     margin-bottom: 10px;
 }
 .whatido__container-blob{
-    max-width: 450px;
-
-    
+width: 100%;
+height: 100%; 
+display: flex;
 }
 .whatido__container-blob_img{
-    width: 100%;  
-}
-.whatido__container-blob_img img{
-    width: 100%; 
-}
+    width: 100%;
+    height: 100%;  
+    }
+
 
 
 .whatido__container{
@@ -42,6 +41,9 @@ grid-template-columns: 1fr;
 .whatido__container-blob{
 order: 1;    
 }
+.whatido__container-blob_img{
+min-height: 300px;
+    }
 .whatido__heading{
     margin-bottom: 30px;
 }

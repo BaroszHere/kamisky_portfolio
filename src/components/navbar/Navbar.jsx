@@ -1,23 +1,31 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 import "./navbar.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Menu = () => (
   <>
   <p><a href="#home">HOME</a></p>
-  <p><a href="#About">ABOUT</a></p>
-  <p><a href="#WHAT_I_DO">WHAT I DO</a></p>
-  <p><a href="#WHAT_I_DID">PROJECTS</a></p>
-  <p><a href="#Contact_me">CONTACT</a></p>
+  <p><a href="#Whatido">WHAT I DO</a></p>
+  <p><a href="#whatidid">PROJECTS</a></p>
+  <p><a href="#whatiuse">WHAT I USE</a></p>
+  <p><a href="#contactme">CONTACT</a></p>
   </>
 )
 
 
 const Navbar = () => {
+
+  useEffect(()=>{
+    AOS.init({duration:1000});
+  }, []);
+
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
 <div className="Header__navbar">
-<div className="Header__navbar_logo">
+<div className="Header__navbar_logo" data-aos="fade-right">
       <a href="#">KAMISKY</a>
     </div>
   <div className="Header__navbar-links">

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./contactme.css";
 import Blob1 from '../../assets/Blob1.png';
 import emailjs from 'emailjs-com'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contactme = () => {
   function sendEmail(e){
@@ -16,10 +18,15 @@ const Contactme = () => {
     }).catch(err=> console.log(err));
     e.target.reset()
   }
+
+  useEffect(()=>{
+    AOS.init({duration:1000});
+  }, []);
+
   return (
   <div className="contactme section__padding" id="contactme">
     <div className="contactme__heading">
-<h2 className="gradient__text">How to contact me?</h2>
+<h2 className="gradient__text" data-aos="fade-left" >How to contact me?</h2>
 </div>
 <div className="contactme__content">
 

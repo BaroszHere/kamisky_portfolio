@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./whatiuse.css";
 import {Technology} from '../../components';
 import {ae,ai,blender,css,figma,github,html,js,ps, react, threejs, vsc} from './imports';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Whatiuse = () => {
+
+  useEffect(()=>{
+    AOS.init({duration:1000});
+  }, []);
+
   return (
   <div className="whatiuse" id="whatiuse">
 <div className="whatiuse__heading">
-<h2 className="gradient__text">What I Use</h2>
+<h2 className="gradient__text" data-aos="fade-left" >What I Use</h2>
 </div>
 <div className="slider">
     <div className="slide-track">

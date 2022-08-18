@@ -1,21 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./article.css";
-import { useSpring, animated } from 'react-spring'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+const Article = ({ imgUrl, title, txt, animation }) => {
 
-const Article = ({ imgUrl, title, txt }) => {
-  const props = useSpring({ 
-    from: { opacity: 0, x:-100 },
-    to: { opacity: 1, x:0},
-  
-    config:{ duration: 400 },
-    delay:200,
-
-  })
+useEffect(()=>{
+  AOS.init({duration:1000});
+}, []);
 
   return (
-    <animated.div style={props}>
-    <div className="whatido__container-article" >
+
+    <div className="whatido__container-article" data-aos={animation} >
       <div className="whatido__container-article_img">
         <img src={imgUrl} alt="whatido image" />
       </div>
@@ -23,11 +19,12 @@ const Article = ({ imgUrl, title, txt }) => {
         
           <h3 >{title}</h3>
           <p>{txt}</p>
+          <a href="#contactme">
           <button className="button ">Dowiedz się więcej</button>
-        
+          </a>
       </div>
     </div>
-    </animated.div>
+
 
   );
 };
